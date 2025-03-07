@@ -12,20 +12,19 @@ class Employee {
         std::cout << "Company - " << Company << std::endl;
         std::cout << "Age - " << Age << std::endl;
     }
+
+    Employee(string name, string company, int age)  {
+        Name = name;
+        Company = company;
+        Age = age;
+    }
 };
 
-
 int main()  {
-    Employee e1;
-    e1.Name = "Rana";
-    e1.Company = "Github";
-    e1.Age = 28;
+    Employee e1 = Employee("Rana", "Github", 28);
     e1.Intro();
 
-    Employee e2;
-    e2.Name = "Bhai";
-    e2.Company = "Gitlab";
-    e2.Age = 29;
+    Employee e2 = Employee("Bhai", "Gitlab", 29);
     e2.Intro();
     
 }
